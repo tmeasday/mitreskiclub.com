@@ -1,0 +1,22 @@
+---
+extension: css
+filter:    
+  - erb
+layout:    nil  
+sizes:
+  :page_width: 960px
+colors:
+  :mitre_blue: '#eef3f8'
+---
+
+
+body {
+  min-width: <%= @page.sizes[:page_width] %>;
+  background-color: <%= @page.colors[:mitre_blue] %>;
+}
+
+#content {
+  margin: 0 auto;
+  width: <%= @page.sizes[:page_width] %>;
+  background-color: white;
+}
