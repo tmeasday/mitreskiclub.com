@@ -1,10 +1,11 @@
 ---
 extension: css
-filter:    
+filter:
   - erb
-layout:    nil  
+layout:    nil
 sizes:
   :page_width: 960px
+  :nav_width: 200
 colors:
   :mitre_blue: '#eef3f8'
 ---
@@ -19,4 +20,14 @@ body {
   margin: 0 auto;
   width: <%= @page.sizes[:page_width] %>;
   background-color: white;
+  overflow: hidden;
+}
+
+#nav {
+  float: left;
+  width: <%= @page.sizes[:nav_width] %>px;
+}
+
+#page_content {
+  margin-left: <%= @page.sizes[:nav_width] + 20 %>px;
 }
