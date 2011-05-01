@@ -14,6 +14,19 @@ colors:
 body {
   min-width: <%= @page.sizes[:page_width] %>;
   background-color: <%= @page.colors[:mitre_blue] %>;
+  font-size: 15px;
+  text-align: justify;
+}
+
+h1 {
+  font-family: "Lucida Grande", "Lucinda Sans Unicode", "Ariel", "Verdana", "sans-serif";
+  font-size: 25px;
+  color: #1C75BC;
+  padding-bottom: 15px;
+}
+
+p {
+  padding-bottom: 10px;
 }
 
 #content {
@@ -33,4 +46,8 @@ body {
 #page_content {
   margin-left: <%= @page.sizes[:nav_width] + 20 %>px;
   padding: 20px;
+}
+
+#logo {
+  padding-bottom: 30px;
 }
