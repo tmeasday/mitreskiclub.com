@@ -26,8 +26,11 @@ body {
 #nav {
   float: left;
   width: <%= @page.sizes[:nav_width] %>px;
+  position: fixed;
+  padding: 20px;
 }
 
 #page_content {
   margin-left: <%= @page.sizes[:nav_width] + 20 %>px;
+  padding: 20px;
 }
