@@ -7,15 +7,20 @@ sizes:
   :page_width: 960px
   :nav_width: 200
 colors:
-  :mitre_blue: '#eef3f8'
+  :mitre_blue: '#D2EDF3'
 ---
 
+/* Text Styles */
 
 body {
   min-width: <%= @page.sizes[:page_width] %>;
   background-color: <%= @page.colors[:mitre_blue] %>;
   font-size: 15px;
   text-align: justify;
+}
+
+p {
+  padding-bottom: 10px;
 }
 
 h1 {
@@ -25,8 +30,24 @@ h1 {
   padding-bottom: 15px;
 }
 
-p {
+/* List Styles */
+
+li {
   padding-bottom: 10px;
+}
+ul.number {
+  list-style-type: decimal;
+  padding-left: 30px;
+}
+
+ul.latin {
+  list-style-type: lower-latin;
+  padding-left: 30px;
+}
+
+ul.roman {
+  list-style-type: lower-roman;
+  padding-left: 30px;
 }
 
 #content {
