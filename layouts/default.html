@@ -20,13 +20,14 @@ filter:    erb
 <body>
   <div id="content">
     <ul id="nav">
-      <li>Home</li>
-      <li>History</li>
-      <li>Information</li>
-      <li>Rules</li>
-      <li>Bookings</li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="information.html">Information</a></li>
+      <li><a href="rules.html">Rules</a></li>
+      <li><a href="bookings.html">Bookings</a></li>
     </ul>
     <div id="page_content">
+      <h1><%= @page.title %></h1>
       <%= @content %>
     </div>
   </div>
