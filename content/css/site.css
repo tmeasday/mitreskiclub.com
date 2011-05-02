@@ -8,6 +8,7 @@ sizes:
   :nav_width: 200
 colors:
   :mitre_blue: '#D2EDF3'
+  :heading: '#1C75BC'
 ---
 
 /* Text Styles */
@@ -26,8 +27,26 @@ p {
 
 h1 {
   font-size: 20px;
-  color: #1C75BC;
+  font-weight: bold;
+  color: <%= @page.colors[:heading] %>;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  color: <%= @page.colors[:heading] %>;
+  padding-top: 15px;
   padding-bottom: 15px;
+}
+
+h3 {
+  font-size: 15px;
+  font-style: italic;
+  color: <%= @page.colors[:heading] %>;
+}
+
+hr {
+  margin-bottom: 30px;
 }
 
 /* List Styles */
@@ -50,7 +69,19 @@ ul.roman {
   padding-left: 30px;
 }
 
+/* Image Styles */
+
+.f_right {
+  float: right;
+  margin: 10px 0px 10px 15px;
+}
+
+
+/* IDs */
+
 #content {
+  background-image: url('../images/skier-in-the-fog.jpg');
+  background-repeat: no-repeat;
   margin: 0 auto;
   width: <%= @page.sizes[:page_width] %>;
   background-color: white;
