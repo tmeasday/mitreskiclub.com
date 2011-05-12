@@ -13,6 +13,14 @@ colors:
 
 /* Text Styles */
 
+html, body {
+  height: 100%;
+}
+
+#content {
+  min-height: 100%;
+}
+
 body {
   min-width: <%= @page.sizes[:page_width] %>;
   background-color: <%= @page.colors[:mitre_blue] %>;
