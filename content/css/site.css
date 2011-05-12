@@ -88,8 +88,6 @@ ul.roman {
 /* IDs */
 
 #content {
-  background-image: url('../images/skier-in-the-fog.jpg');
-  background-repeat: no-repeat;
   margin: 0 auto;
   width: <%= @page.sizes[:page_width] %>;
   background-color: white;
@@ -97,6 +95,9 @@ ul.roman {
 }
 
 #nav {
+  background-image: url('../images/skier-in-the-fog.jpg');
+  background-repeat: no-repeat;
+  min-height: 750px;
   float: left;
   width: <%= @page.sizes[:nav_width] %>px;
   position: fixed;
