@@ -107,13 +107,13 @@ ul li {
 }
 
 #top {
-  background: black url(/images/bg.jpg) no-repeat top center;
+  background: black url(/images/background.jpg) no-repeat top center;
   height: 500px;
 }
 
 #slider {
   margin: 0 auto;
-  width: 950px;
+  width: 960px;
   height: 500px;
   position: relative;
 }
@@ -155,7 +155,7 @@ ul li {
 /* Menu */
 
 #menu {
-  width: 900px;
+  width: 960px;
   margin: 55px auto 20px;
   height: 40px;
 }
@@ -163,7 +163,7 @@ ul li {
 #menu li {
   display: block;
   float: left;
-  width: 150px;
+  width: 160px;
 }
 
 #home {
@@ -172,7 +172,7 @@ ul li {
   height: 40px;
   overflow: hidden;
   background-position: 0 0;
-  width: 150px;
+  width: 160px;
 }
 #home:hover {
   background-position: 0 -40px;
@@ -187,7 +187,7 @@ ul li {
   height: 40px;
   overflow: hidden;
   background-position: 0 0;
-  width: 150px;
+  width: 160px;
 }
 #bookings:hover {
   background-position: 0 -40px;
@@ -202,7 +202,7 @@ ul li {
   height: 40px;
   overflow: hidden;
   background-position: 0 0;
-  width: 150px;
+  width: 160px;
 }
 #rules:hover {
   background-position: 0 -40px;
@@ -217,7 +217,7 @@ ul li {
   height: 40px;
   overflow: hidden;
   background-position: 0 0;
-  width: 150px;
+  width: 160px;
 }
 #history:hover {
   background-position: 0 -40px;
@@ -232,7 +232,7 @@ ul li {
   height: 40px;
   overflow: hidden;
   background-position: 0 0;
-  width: 150px;
+  width: 160px;
 }
 #forms:hover {
   background-position: 0 -40px;
@@ -247,7 +247,7 @@ ul li {
   height: 40px;
   overflow: hidden;
   background-position: 0 0;
-  width: 150px;
+  width: 160px;
 }
 #contact:hover {
   background-position: 0 -40px;
