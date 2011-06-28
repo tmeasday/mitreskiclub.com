@@ -103,6 +103,12 @@ ul li {
 
 #content {
   margin: 0 auto;
+  padding: 0 150px 50px;
+  width: 660px;
+}
+
+.home #content {
+  padding: 0 0 50px;
   width: 960px;
 }
 
@@ -150,12 +156,6 @@ ul li {
   padding-left: 5px;
 }
 
-.text {
-  width: 650px;
-  margin: 0px auto;
-}
-
-
 /* Menu */
 
 #menu {
@@ -170,92 +170,46 @@ ul li {
   width: 160px;
 }
 
+#menu a {
+  display: block;
+  height: 40px;
+  overflow: hidden;
+  background-position: 0 0;
+  width: 160px;  
+}
+#menu a:hover {
+  background-position: 0 -40px;  
+}
+#menu a:active {
+  background-position: 0 -80px;  
+}
+
+.home #home, .home #home:hover,
+  .bookings #bookings, .bookings #bookings:hover,
+  .rules #rules, .rules #rules:hover,
+  .history #history, .history #history:hover,
+  .forms #forms, .forms #forms:hover,
+  .contact #contact, .contact #contact:hover {
+  background-position: 0 -40px;  
+}
+
+
 #home {
   background-image: url("/images/home.png");
-  display: block;
-  height: 40px;
-  overflow: hidden;
-  background-position: 0 0;
-  width: 160px;
 }
-#home:hover {
-  background-position: 0 -40px;
-}
-#home:active {
-  background-position: 0 -80px;
-}
-
+  
 #bookings {
   background-image: url("/images/bookings.png");
-  display: block;
-  height: 40px;
-  overflow: hidden;
-  background-position: 0 0;
-  width: 160px;
 }
-#bookings:hover {
-  background-position: 0 -40px;
-}
-#bookings:active {
-  background-position: 0 -80px;
-}
-
 #rules {
   background-image: url("/images/rules.png");
-  display: block;
-  height: 40px;
-  overflow: hidden;
-  background-position: 0 0;
-  width: 160px;
 }
-#rules:hover {
-  background-position: 0 -40px;
-}
-#rules:active {
-  background-position: 0 -80px;
-}
-
 #history {
   background-image: url("/images/club-history.png");
-  display: block;
-  height: 40px;
-  overflow: hidden;
-  background-position: 0 0;
-  width: 160px;
 }
-#history:hover {
-  background-position: 0 -40px;
-}
-#history:active {
-  background-position: 0 -80px;
-}
-
 #forms {
   background-image: url("/images/forms.png");
-  display: block;
-  height: 40px;
-  overflow: hidden;
-  background-position: 0 0;
-  width: 160px;
 }
-#forms:hover {
-  background-position: 0 -40px;
-}
-#forms:active {
-  background-position: 0 -80px;
-}
-
 #contact {
   background-image: url("/images/contact.png");
-  display: block;
-  height: 40px;
-  overflow: hidden;
-  background-position: 0 0;
-  width: 160px;
-}
-#contact:hover {
-  background-position: 0 -40px;
-}
-#contact:active {
-  background-position: 0 -80px;
 }
