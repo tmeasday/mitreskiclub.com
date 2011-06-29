@@ -38,6 +38,7 @@ h1 {
   font-weight: bold;
   color: <%= @page.colors[:heading] %>;
   padding-bottom: 20px;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -57,21 +58,28 @@ h3 {
   color: <%= @page.colors[:heading] %>;
 }
 
+dt {
+  float: left;
+  clear: left;
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 160px;
+}
+
 /* List Styles */
 
 ol {
   list-style-type: decimal;
-  margin: 0px 30px;
 }
 
 ol ol {
   list-style-type: lower-latin;
-  margin: 0px 30px;
 }
 
 ol ol ol {
   list-style-type: lower-roman;
-  margin: 0px 30px;
 }
 
 ol li {
@@ -84,7 +92,7 @@ ol ul li {
 
 ul {
   list-style: disc;
-  margin: 0px 30px;
+  margin-left: 19px;
 }
 
 ul li {
@@ -110,6 +118,11 @@ ul li {
 .home #content {
   padding: 0 0 50px;
   width: 960px;
+}
+
+.bookings #content {
+  width: 960px;
+  padding: 0 0 50px;
 }
 
 #top {
@@ -144,16 +157,32 @@ ul li {
   padding: 20px 50px 0px;
 }
 
-/* Classes */
-
-.cols {
-  float: left;
-  width: 300px;
-  padding: 0px 10px 0px 10px;
+#calendar {
+  margin-bottom: 50px;
 }
 
-.icon {
-  padding-left: 5px;
+#construction {
+  width: 347px;
+  margin: 0 auto;
+}
+
+/* Classes */
+
+.col {
+  float: left;
+  width: 300px;
+}
+.col + .col {
+  padding-left: 30px;
+}
+
+.bookings .col {
+  width: 465px;
+}
+
+.sm_link {
+  font-size: 9px;
+  text-align: right;
 }
 
 /* Menu */
@@ -170,23 +199,23 @@ ul li {
   width: 160px;
 }
 
-#menu a {
+#menu a, #booking-button {
   display: block;
+  width: 160px;  
   height: 40px;
   overflow: hidden;
   background-position: 0 0;
-  width: 160px;  
 }
-#menu a:hover {
+#menu a:hover, #booking-button:hover {
   background-position: 0 -40px;  
 }
-#menu a:active {
+#menu a:active, #booking-button:active {
   background-position: 0 -80px;  
 }
 
 .home #home, .home #home:hover,
   .bookings #bookings, .bookings #bookings:hover,
-  .rules #rules, .rules #rules:hover,
+  .information #information, .information #information:hover,
   .history #history, .history #history:hover,
   .forms #forms, .forms #forms:hover,
   .contact #contact, .contact #contact:hover {
@@ -197,12 +226,11 @@ ul li {
 #home {
   background-image: url("/images/home.png");
 }
-  
 #bookings {
   background-image: url("/images/bookings.png");
 }
-#rules {
-  background-image: url("/images/rules.png");
+#information {
+  background-image: url("/images/information.png");
 }
 #history {
   background-image: url("/images/club-history.png");
@@ -212,4 +240,8 @@ ul li {
 }
 #contact {
   background-image: url("/images/contact.png");
+}
+#booking-button {
+  margin: 0 auto;
+  background-image: url("/images/booking-form.png");
 }
