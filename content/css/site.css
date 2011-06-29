@@ -116,7 +116,7 @@ ul li {
 }
 
 .home #content {
-  padding: 0 0 50px;
+  padding: 0 0 550px;
   width: 960px;
 }
 
@@ -126,7 +126,7 @@ ul li {
 }
 
 #top {
-  background: black url(/images/background.jpg) no-repeat top center;
+  background: black url(/images/bg.jpg) no-repeat top center;
   height: 500px;
 }
 
@@ -151,6 +151,10 @@ ul li {
 #social {
   width: 127px;
   margin: 20px auto;
+}
+
+#social a + a {
+  padding-left: 10px;
 }
 
 #logo {
@@ -183,6 +187,10 @@ ul li {
 .sm_link {
   font-size: 9px;
   text-align: right;
+}
+
+.rssincl-title, .rssincl-head {
+  display: none;
 }
 
 /* Menu */
